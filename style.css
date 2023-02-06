@@ -1,0 +1,243 @@
+/* body {
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+    color: black;
+    font-size: 11pt;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background:
+        radial-gradient(circle at 50% 50%, rgba(62, 81, 81, 0.8), rgba(62, 81, 81, 0.8) 70%, transparent 70%),
+        radial-gradient(circle at 50% 50%, rgba(222, 203, 164, 0.8), rgba(222, 203, 164, 0.8) 70%, transparent 70%);
+    background-size: 200% 200%;
+    animation: floating-futuristic 20s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes floating-futuristic {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: -100% -100%;
+    }
+}
+
+body:hover {
+    cursor: pointer;
+}
+
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 50px 0;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    color: grey;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.logo:active {
+    transform: scale(0.95);
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.black10pointcourier {
+    font-family: 'courier';
+    color: black;
+    font-size: 10pt;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* .dropzone {
+    border: 10px dashed gray;
+    width: 20%;
+    padding: 2% 2% 5% 2%;
+    text-align: center;
+    margin: 5px 0 5px 0;
+} */
+
+/* Testig Started */
+
+.dropzone {
+    border: 5px solid gray;
+    width: 40%;
+    padding: 2% 2% 5% 2%;
+    text-align: center;
+    /* margin: 5px 0 5px 0; */
+    /* center */
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropzone:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px #ccc;
+}
+
+@media (max-width: 600px) {
+    .dropzone {
+        width: 80%;
+    }
+}
+
+/* Testing ENded */
+
+/* Testing 2 started */
+/* .dropzone {
+    width: 20%;
+    padding: 2% 2% 5% 2%;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropzone:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 10px solid #ccc;
+    border-radius: 20px;
+}
+
+.dropzone:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px #ccc;
+} */
+/* Testing 2 ended */
+
+.divTablefullwidth {
+    display: table;
+    width: 100%;
+}
+
+.divTable {
+    display: table;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    display: table-cell;
+    padding: 3px 3px;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+.greenspan {
+    color: green;
+}
+
+.hrStyle {
+    border: 0;
+    height: 1px;
+    background: #333;
+    /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+}
+
+.redspan {
+    color: red;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px #ccc;
+
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.form-container:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 30%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.form-row input[type="password"] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.form-row input[type="password"]:hover {
+    background-size: 0 2px;
+}
+
+.form-validation {
+    font-size: 1.2em;
+    color: #28a745;
+    margin-left: 10px;
+}
+
+input[type="password"]:focus {
+    border: 2px solid #28a745;
+}
